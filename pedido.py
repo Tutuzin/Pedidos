@@ -4,14 +4,12 @@ def produtos(pedido):
         lenght = len(pedido)
         quantidades = [0,0,0]
         while vezes != lenght:
-            vez = int(pedido[vezes])
+            atual = int(pedido[vezes])
             vezes += 1
-            if vez == 1: quantidades[0] += 1
-            else:
-                if vez == 2: quantidades[1] += 1
-                else:
-                    if vez == 3: quantidades[2] += 1
-                    else: print('Produto ', vez, ' não cadastrado')
+            if atual == 1: quantidades[0] += 1
+            elif atual == 2: quantidades[1] += 1
+                elif atual == 3: quantidades[2] += 1
+                    else: print('Produto ', atual, ' não cadastrado')
         return quantidades
 def valor(quantidades):
     #modificar preços aqui
